@@ -104,3 +104,54 @@ POTION_RECIPIES = [
     ['Super combat potion', 'Super attack(4)', 'Torstol', 'Super strength(4)', 'Super defence(4)'],
     ['Anti-venom+', 'Anti-venom(4)', 'Torstol']
 ]
+
+HERBS = [
+    'Guam leaf',
+    'Marrentill',
+    'Tarromin',
+    'Harralander',
+    'Ranarr weed',
+    'Toadflax',
+    'Irit leaf',
+    'Avantoe',
+    'Kwuarm',
+    'Snapdragon',
+    'Cadantine',
+    'Lantadyme',
+    'Dwarf weed',
+    'Torstol'
+]
+
+GRIMY_HERBS = [
+    'Grimy guam leaf',
+    'Grimy marrentill',
+    'Grimy tarromin',
+    'Grimy harralander',
+    'Grimy ranarr weed',
+    'Grimy toadflax',
+    'Grimy irit leaf',
+    'Grimy avantoe',
+    'Grimy kwuarm',
+    'Grimy snapdragon',
+    'Grimy cadantine',
+    'Grimy lantadyme',
+    'Grimy dwarf weed',
+    'Grimy torstol'
+]
+
+UNF_POTIONS = [
+    'Guam potion (unf)',
+    'Marrentill potion (unf)',
+    'Tarromin potion (unf)',
+    'Harralander potion (unf)',
+    'Ranarr potion (unf)',
+    'Toadflax potion (unf)',
+    'Irit potion (unf)',
+    'Avantoe potion (unf)',
+    'Kwuarm potion (unf)',
+    'Snapdragon potion (unf)',
+    'Cadantine potion (unf)',
+    'Lantadyme potion (unf)',
+    'Dwarf weed potion (unf)',
+    'Torstol potion (unf)'
+]

@@ -12,7 +12,7 @@ def get_args():
 def main():
     args = get_args()
     port = int(args.port)
-
+    print(f'Attempting to start server on port {port}')
     try:
         app.run(host = '0.0.0.0', port = port, debug = True)
     except Exception as ex:

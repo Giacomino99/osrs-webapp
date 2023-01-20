@@ -9,7 +9,7 @@ import datetime
 import time
 from pprint import pprint
 
-from recipies import POTIONS, POTION_RECIPIES
+from recipies import POTIONS, POTION_RECIPIES, HERBS, GRIMY_HERBS, UNF_POTIONS
 
 app = Flask(__name__, template_folder = 'templates')
 HEADER = {'user-agent' : 'OSRS Profit Calculator, Giacomino#6416'}
@@ -90,3 +90,15 @@ def get_potion_info():
             out.append(data)
 
     return out
+
+@app.route('/herbs', methods = ['GET'])
+def herb_table():
+    update_files()
+    load_data()
+    table_data = []
+    for h, g, in zip(HERBS, GRIMY_HERBS):
+        data = (h, get_price(h), get_price(g))
+        table_data.append(data)
+    html = render_template('herbs.html', table_data = table_data)
+    response = make_response(html)
+    return response
